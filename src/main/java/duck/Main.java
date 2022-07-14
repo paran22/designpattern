@@ -9,6 +9,10 @@ public class Main {
         Duck duck = new MallardDuck();
         duck.display();
         duck.swim();
+        duck.performFly();
+        System.out.println("---------changeFlyBehavior------------");
+        duck.setFly(new FlyNoWay());
+        duck.performFly();
 
         Duck duck2 = new RedHeadDuck();
         duck2.display();
